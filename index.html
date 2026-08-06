@@ -42,6 +42,45 @@
 			color: #c0392b;
 			font-style: italic;
 		}
+		/* 직함/역할 소제목 강조 */
+		.work-list li:nth-child(3) {
+			color: #1a1a1a !important;
+			font-weight: 600 !important;
+			text-decoration: none !important;
+		}
+		/* 오른쪽 고정 사이드 내비게이션 */
+		.side-nav {
+			position: fixed;
+			top: 50%;
+			right: 26px;
+			transform: translateY(-50%);
+			z-index: 999;
+		}
+		.side-nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.side-nav li {
+			margin: 12px 0;
+			text-align: right;
+		}
+		.side-nav a {
+			font-size: 0.72em;
+			color: #999999;
+			text-decoration: none;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			transition: color 0.2s ease;
+		}
+		.side-nav a:hover {
+			color: #1a1a1a;
+		}
+		@media (max-width: 900px) {
+			.side-nav {
+				display: none;
+			}
+		}
 	</style>
 </head>
 <body>
@@ -67,6 +106,19 @@
 			</header>
 		</div>
 	</div>
+	<!-- Side Navigation -->
+	<nav class="side-nav">
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#experiences">Experience</a></li>
+			<li><a href="#activities">Activities</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#certificates">Certificates</a></li>
+			<li><a href="#awards">Awards</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#education">Education</a></li>
+		</ul>
+	</nav>
 	<!-- Introduction -->
 	<div class="intro section" id="about">
 		<div class="container">
@@ -132,7 +184,7 @@
 	<!-- Activities -->
 	<div class="work section second" id="activities">
 		<div class="container">
-			<h1>Activities<br>/ 봉사</h1>
+			<h1>Activities &amp;<br>Volunteering</h1>
 			<ul class="work-list">
 				<li>2025.03</li>
 				<li><a href="javascript:void(0);">시원스쿨</a></li>

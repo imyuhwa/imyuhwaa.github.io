@@ -48,6 +48,13 @@
 			font-weight: 600 !important;
 			text-decoration: none !important;
 		}
+		/* 실제 링크가 연결된 타이틀에는 자동으로 화살표 표시 (target=_blank 있는 것만 해당) */
+		.work-list a[target="_blank"]::after {
+			content: " ↗";
+			font-size: 0.75em;
+			color: #999999;
+			font-weight: 400;
+		}
 		/* 오른쪽 고정 사이드 내비게이션 */
 		.side-nav {
 			position: fixed;
@@ -181,6 +188,15 @@
 		<div class="container">
 			<h1>Activities &amp;<br>Volunteering</h1>
 			<ul class="work-list">
+				<li>2025.06 ~ 현재</li>
+				<li><a href="javascript:void(0);">틱톡 콘텐츠 채널</a></li>
+				<li>개인 프로젝트 · 콘텐츠 기획/제작/운영 1인 담당</li>
+			</ul>
+			<ul class="work-detail">
+				<li>유입 데이터·이탈 구간·댓글 반응 교차 분석으로 페르소나 재설계</li>
+				<li>팔로워 7.5K, 대표 게시물 조회수 116.6K·좋아요 13.7K·댓글 2.8K 달성</li>
+			</ul>
+			<ul class="work-list">
 				<li>2025.03</li>
 				<li><a href="javascript:void(0);">시원스쿨</a></li>
 				<li>프랑스어 학습 블로그 서포터즈 '열공챌린지' 활동</li>
@@ -235,15 +251,6 @@
 	<div class="work section second" id="projects">
 		<div class="container">
 			<h1>Personal &amp;<br>Team Projects</h1>
-			<ul class="work-list">
-				<li>2025.06 ~ 현재</li>
-				<li><a href="javascript:void(0);">틱톡 콘텐츠 채널</a></li>
-				<li>개인 프로젝트 · 콘텐츠 기획/제작/운영 1인 담당</li>
-			</ul>
-			<ul class="work-detail">
-				<li>유입 데이터·이탈 구간·댓글 반응 교차 분석으로 페르소나 재설계</li>
-				<li>팔로워 7.5K, 대표 게시물 조회수 116.6K·좋아요 13.7K·댓글 2.8K 달성</li>
-			</ul>
 			<ul class="work-list">
 				<li>2021.11 ~ 2022.02</li>
 				<li><a href="https://www.ajou.ac.kr/kr/ajou/notice.do?mode=view&articleNo=196305" target="_blank">프랑스 Nantes 대학교 · 아주대학교</a></li>
